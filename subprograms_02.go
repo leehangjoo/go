@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+func square(n int) int{
+	return n * n
+}
+
 func sum(numbers ...int) int{
 	r := 0
 	for _ , number := range numbers {
@@ -9,7 +13,6 @@ func sum(numbers ...int) int{
 	}
 	return r
 }
-
 func main(){
 	//var inhaArray [7] string //array
 	var inhaSlice [] string //slice
@@ -20,7 +23,7 @@ func main(){
 	inhaSlice[1] = "n"
 	inhaSlice[2] = "h"
 	inhaSlice[3] = "a"
-
+	fmt.Println(square(7))
 	for i := 0 ; i < len(inhaSlice); i++ {
 		fmt.Println(inhaSlice[i])
 	}
